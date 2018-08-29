@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href='css/main.css' rel='stylesheet' type='text/css'>
+    <bootstrap-head-import></bootstrap-head-import>
+</head>
+<body>
+
+<div class="bg">
+    <navigation-bar></navigation-bar>
+    <div class="text-center mt-5">
+        <div class="row align-items-center">
+            <div class="col">
+                <h2>Здоров, пацаны</h2>
+            </div>
+        </div>
+        <div class="row align-items-center mt-3">
+            <div class="col">
+                <a href="#" class="mt-4">
+                    <div class="btn btn-outline-warning">
+                        <span style="color: #000b38;">Так шо. Го тестить?</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="js/main.js"></script>
+<bootstrap-body-import></bootstrap-body-import>
+</body>
+</html>
+<script>
+    import NavigationBar from "./js/vuecomponents/navbar/navigation-bar";
+    export default {
+        components: {NavigationBar}
+    }
+</script>
+<script>
+    import BootstrapHeadImport from "./js/vuecomponents/bootstrap-head-import";
+    export default {
+        components: {BootstrapHeadImport}
+    }
+</script>
+<script>
+    import BootstrapBodyImport from "./js/vuecomponents/bootstrap-body-import";
+    export default {
+        components: {BootstrapBodyImport}
+    }
+</script>
