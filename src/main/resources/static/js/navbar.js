@@ -1,15 +1,16 @@
 
-
-var user = new Vue({
-    data: {
-        isAdmin: false,
-        username: "unknown",
-        isAuthorised: false
+class CurrentUser{
+    constructor(isAdmin, username, isAuthorised){
+        this.isAdmin = isAdmin;
+        this.username = username;
+        this.isAuthorised = isAuthorised;
     }
-});
+}
+
+let curr_user = new CurrentUser(false, "unknown", false);
 
 
-var user_definition = new Vue({
+let user_definition = new Vue({
     el: "#isUser",
     data: {
         unknown: true

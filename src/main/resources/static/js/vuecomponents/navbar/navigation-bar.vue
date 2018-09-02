@@ -9,14 +9,14 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link " href="#">Home</a>  <!--href="/general"-->
                 <a class="nav-item nav-link" href="#">Works</a>  <!--href="/general"-->
-                <user-list-link v-if="user.isAdmin"></user-list-link>   <!-- -->
+                <!--<user-list-link v-if="user.isAdmin"></user-list-link>   &lt;!&ndash; &ndash;&gt;-->
             </div>
         </div>
 
-        <auth-user-nav-options
-                v-if="user.isAuthorised && user.username !== 'unknown'"
-                :username="user.username">
-        </auth-user-nav-options>
+        <!--<auth-user-nav-options-->
+                <!--v-if="user.isAuthorised && user.username !== 'unknown'"-->
+                <!--:username="user.username">-->
+        <!--</auth-user-nav-options>-->
     </nav>
 
 </template>
@@ -24,15 +24,16 @@
 <script>
     import AuthUserNavOptions from "./auth-user-nav-options";
     import UserListLink from "./user-list-link";
-    
+
 
     export default {
+        el: "#bg",
         name: "navigation-bar",
         components: {UserListLink, AuthUserNavOptions},
-        props: {'user': user}
+        //props: {'user': user}
     }
 </script>
 
 <style scoped>
-    @import url();
+
 </style>
